@@ -8,7 +8,7 @@ public class GreetingController {
 
    @GetMapping("/greeting")
    public String showGreeting(Model model) {
-      model.addAttribute("helloThymeleafViewResolverString", "Hello Thymeleaf View Resolver!");
+      model.addAttribute("helloViewResolverString", "Hello View Resolver!");
       return "greeting";
    }
 }
